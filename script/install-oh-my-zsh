@@ -1,4 +1,8 @@
 #!/bin/sh
 
-# Install oh-my-zsh
+if [ -f "$HOME/.oh-my-zsh" ]
+then
+    echo "Oh My Zsh is already installed."
+    return
+fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
