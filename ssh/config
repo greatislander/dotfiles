@@ -1,0 +1,106 @@
+Host platform.coop
+  HostName ctweb12.ct.coop
+  Port 22222
+  User platformcoop
+
+Host pressbooks.test
+  HostName 127.0.0.1
+  User vagrant
+  Port 2200
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /Users/ned/Projects/Pressbooks/development/trellis/.vagrant/machines/default/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  ForwardAgent yes
+Host 10.30.*.*
+  IdentityFile ~/Projects/Pressbooks/infrastructure/shared-infrastructure/terraform/production/files/ssh/web.key
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+  ProxyCommand ~/Projects/Pressbooks/infrastructure/shared-infrastructure/bin/proxy-command.sh production -W %h:%p
+  ForwardAgent true
+
+# Pressbooks Staging
+Host 10.32.*.*
+  IdentityFile ~/Projects/Pressbooks/infrastructure/shared-infrastructure/terraform/staging/files/ssh/web.key
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+  ProxyCommand ~/Projects/Pressbooks/infrastructure/shared-infrastructure/bin/proxy-command.sh staging -W %h:%p
+  ForwardAgent true
+
+# Fore
+Host fore
+  HostName 167.99.185.65
+  User ubuntu
+
+# Fore (Local)
+Host fore-local
+  HostName 127.0.0.1
+  User vagrant
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /Users/ned/Projects/Bight/fore/.vagrant/machines/default/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  ForwardAgent yes
+
+# Port
+Host port
+  HostName 165.227.43.20
+  User ubuntu
+
+# Starboard
+Host starboard
+  HostName 159.203.44.190
+  User ubuntu
+
+Host antigonishtownhouse.test
+  HostName 127.0.0.1
+  User vagrant
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /Users/ned/Projects/Bight/antigonishtownhouse.com/trellis/.vagrant/machines/default/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  ForwardAgent yes
+Host platformcoop.test
+  HostName 127.0.0.1
+  User vagrant
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /Users/ned/Projects/IDRC/platform.coop/trellis/.vagrant/machines/default/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  ForwardAgent yes
+
+Host greatislandarts.test
+  HostName 127.0.0.1
+  User vagrant
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /Users/ned/Projects/Bight/port/.vagrant/machines/default/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  ForwardAgent yes
+
+Host resources.platform.test
+  HostName 127.0.0.1
+  User vagrant
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /Users/ned/Projects/IDRC/resources.platform.coop/trellis/.vagrant/machines/default/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  ForwardAgent yes
+
