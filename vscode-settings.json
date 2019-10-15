@@ -1,0 +1,55 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Night Owl",
+  "editor.fontFamily": "'Operator Mono Ssm', monospace",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "eslint.autoFixOnSave": true,
+  "python.venvPath": "~/.virtualenvs",
+  "typescript.format.enable": false,
+  "typescript.validate.enable": false,
+  "javascript.suggestionActions.enabled": false,
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "file-icons",
+  "editor.matchBrackets": false,
+  "editor.accessibilitySupport": "off",
+  "phpcs.ignorePatterns": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Test,test,Tests,tests}/**"
+  ],
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Test,test,Tests,tests}/**"
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "yaml.format.enable": true,
+  "terminal.external.osxExec": "Hyper.app",
+  "files.insertFinalNewline": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "xo.enable": true,
+  "xo.format.enable": true,
+  "[php]": {
+    "editor.formatOnSave": false
+  },
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "stylelint.autoFixOnSave": true,
+  "css.validate": false,
+  "scss.validate": false
+}
+
