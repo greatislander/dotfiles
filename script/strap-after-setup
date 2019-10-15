@@ -3,10 +3,13 @@
 
 cd $(dirname $0)/..
 
-# script/extract-onepassword-secrets
+script/extract-onepassword-secrets
 script/install-vscode-extensions
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 if [ "$SHELL" != "/bin/zsh" ]
 then
-  chsh -s /bin/zsh mike
+  chsh -s /bin/zsh neds
 fi
