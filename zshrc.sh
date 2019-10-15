@@ -132,3 +132,9 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+# GitHub API shortcut
+github-api-curl() {
+  curl -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/$1"
+}
+alias github-api-curl="noglob github-api-curl"
