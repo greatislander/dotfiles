@@ -4,18 +4,6 @@ export PATH=$HOME/bin:$HOME/.composer/vendor/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ned/.oh-my-zsh"
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -53,9 +41,6 @@ ZSH_THEME="robbyrussell"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -109,10 +94,10 @@ export PATH="/usr/local/opt/node/bin:$PATH"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # Virtualenv
-export VIRTUALENVWRAPPER_PYTHON=$(which python2.7)
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+# export VIRTUALENVWRAPPER_PYTHON=$(which python2.7)
+# export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+# export WORKON_HOME=~/.virtualenvs
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # added by travis gem
 [ -f /Users/ned/.travis/travis.sh ] && source /Users/ned/.travis/travis.sh
