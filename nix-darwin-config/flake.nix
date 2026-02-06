@@ -21,21 +21,21 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
-        # _1password-cli
-        # ansible
-        # atuin
-        # awscli
-        # certbot
-        # curl
-        # lima
-        # magic-wormhole
-        # mas
-        # neovim
-        # nixd
-        # tailscale
+        _1password-cli
+        ansible
+        atuin
+        awscli
+        certbot
+        curl
+        lima
+        magic-wormhole
+        mas
+        neovim
+        nixd
+        tailscale
       ];
 
-      networking.computerName = "onyx";
+      networking.computerName = "Onyx";
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
@@ -84,8 +84,8 @@
   in
   {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#onyx
-    darwinConfigurations."onyx" = nix-darwin.lib.darwinSystem {
+    # $ darwin-rebuild build --flake .#Onyx
+    darwinConfigurations."Onyx" = nix-darwin.lib.darwinSystem {
       # Pass those informations to the submodules
       specialArgs = { inherit user userHome dotfilesPath; };
       modules = [
