@@ -1,0 +1,190 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontFamily": "\"Iosevka Extended\", monospace",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "python.venvPath": "~/.virtualenvs",
+  "typescript.format.enable": false,
+  "typescript.validate.enable": false,
+  "javascript.suggestionActions.enabled": false,
+  "editor.matchBrackets": "always",
+  "editor.accessibilitySupport": "off",
+  "phpcs.ignorePatterns": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Test,test,Tests,tests}/**",
+    "vendor"
+  ],
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Test,test,Tests,tests}/**"
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "yaml.format.enable": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "files.insertFinalNewline": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "njk": "html"
+  },
+  "kubernetes-yaml-formatter.compactSequenceIndent": false,
+  "xo.enable": true,
+  "xo.format.enable": true,
+  "[php]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+  },
+  "[njk]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[hbs]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[svg]": {
+    "editor.formatOnSave": false
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "kennylong.kubernetes-yaml-formatter",
+    "editor.formatOnSave": false
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "phpcs.standard": "PSR2",
+  "html-css-class-completion.enableEmmetSupport": true,
+  "emmet.triggerExpansionOnTab": true,
+  "svgo.removeViewBox": false,
+  "svgo.removeTitle": true,
+  "svgo.prefixIds": false,
+  "svgo.convertStyleToAttrs": false,
+  "svgo.inlineStyles": false,
+  "stylelint.autoFixOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never",
+    "source.fixAll.stylelint": "never"
+  },
+  "liveshare.featureSet": "stable",
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pylintEnabled": false,
+  "eslint.onIgnoredFiles": "warn",
+  "markdownlint.config": {
+    "no-trailing-punctuation": false,
+    "no-inline-html": false,
+    "line-length": {
+      "line_length": 120,
+      "tables": false,
+      "code_blocks": false
+    }
+  },
+  "tailwindCSS.includeLanguages": {
+    "nunjucks": "html",
+    "njk": "html",
+    "Nunjucks": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "headwind.classRegex": {
+    "njk": "\\bclass\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\']",
+    "html": "\\bclass\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\']",
+    "css": "\\B@apply\\s+([_a-zA-Z0-9\\s\\-\\:\\/]+);",
+    "javascript": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)",
+    "javascriptreact": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)",
+    "typescript": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)",
+    "typescriptreact": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)"
+  },
+  "explorer.compactFolders": false,
+  "eslint.format.enable": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "files.associations": {
+    "*.html": "html",
+    "*.stub": "php",
+    "*.yml": "yaml"
+  },
+  "gitlens.advanced.caching.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "php-cs-fixer.executable": "/Users/ned/.composer/vendor/bin/php-cs-fixer",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "svelte.ask-to-enable-ts-plugin": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.iconTheme": "file-icons",
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "npm.keybindingsChangedWarningShown": true,
+  "githubPullRequests.pullBranch": "never",
+  "editor.fontSize": 15,
+  "phpstan.timeout": 1000000,
+  "window.autoDetectColorScheme": true,
+  "markdown.preview.fontSize": 15,
+  "debug.console.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "scm.inputFontSize": 15,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1716429085189,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.activityBar.location": "hidden",
+  "githubPullRequests.terminalLinksHandler": "github",
+  "prettier.requireConfig": true,
+  "workbench.colorTheme": "Night Owl",
+  "yaml.schemas": {
+    "/Users/ned/.dotfiles/schemas/kirby4-blueprints.schema.json": [
+      "site/blueprints/site.yml",
+      "site/blueprints/files/*.yml",
+      "site/blueprints/pages/*.yml"
+    ]
+  },
+  "prettier.enable": false,
+  "[postcss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "workbench.preferredDarkColorTheme": "Night Owl",
+  "editor.renderWhitespace": "all",
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
+}

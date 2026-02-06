@@ -1,3 +1,4 @@
+.DS_Store
 /ssh/id_*
 /ssh/id_rsa
 /ssh/*_rsa*
@@ -7,4 +8,5 @@
 /gnupg/*.gpg
 /gnupg/*.kbx
 /gnupg/*.private.*
+result
 secrets
