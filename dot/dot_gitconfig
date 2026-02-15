@@ -4,8 +4,17 @@
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK30hilpDU96vQhwEKPz5qb+/daHbrQQdFcB795sIafC
 [github]
 	user = greatislander
+[core]
+    editor = nvim
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+[merge]
+    conflictStyle = zdiff3
 [push]
-	default = simple
 	autoSetupRemote = true
 [credential]
 	helper = osxkeychain
@@ -19,3 +28,5 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
+[tag]
+    gpgsign = true

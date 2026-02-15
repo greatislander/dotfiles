@@ -24,14 +24,18 @@
         _1password-cli
         ansible
         atuin
+        bat
         awscli
         certbot
         curl
+        delta
+        fd
         lima
         magic-wormhole
         mas
         neovim
         nixd
+        ripgrep
         tailscale
       ];
 
