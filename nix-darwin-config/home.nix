@@ -46,6 +46,7 @@
       nixclean = "nix-collect-garbage -d";
       prunenodemodules = "find . -type d -name 'node_modules' -prune -mtime +30 | xargs du -sh | gsort -rh | head -20 | cut -c 6- | xargs rm -r";
       sed = "gsed";
+      vi = "nvim";
     };
 
     initContent = ''
