@@ -47,6 +47,7 @@
       "imazing"
       "jordanbaird-ice"
       "kaleidoscope"
+      "lapce"
       "localsend"
       "logi-options+"
       "maestral"

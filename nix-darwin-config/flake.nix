@@ -29,6 +29,7 @@
         certbot
         curl
         delta
+        eza
         fd
         lima
         magic-wormhole
