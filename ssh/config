@@ -1,106 +1,56 @@
-Host platform.coop
-  HostName ctweb12.ct.coop
-  Port 22222
-  User platformcoop
+# Added by OrbStack: 'orb' SSH host for Linux machines
+# This only works if it's at the top of ssh_config (before any Host blocks).
+# This won't be added again if you remove it.
+Include ~/.orbstack/ssh/config
 
-Host pressbooks.test
-  HostName 127.0.0.1
-  User vagrant
-  Port 2200
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile /Users/ned/Projects/Pressbooks/development/trellis/.vagrant/machines/default/virtualbox/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-  ForwardAgent yes
-Host 10.30.*.*
-  IdentityFile ~/Projects/Pressbooks/infrastructure/shared-infrastructure/terraform/production/files/ssh/web.key
+Include ~/.lima/ceciliamckinnon.art/ssh.config
+
+Host *
+  IdentityAgent "~/.1password/agent.sock"
+
+host pi4
+  HostName pi4.angora-escalator.ts.net
+  Port 22
+  User ned
   IdentityFile ~/.ssh/id_rsa
-  IdentitiesOnly yes
-  ProxyCommand ~/Projects/Pressbooks/infrastructure/shared-infrastructure/bin/proxy-command.sh production -W %h:%p
-  ForwardAgent true
 
-# Pressbooks Staging
-Host 10.32.*.*
-  IdentityFile ~/Projects/Pressbooks/infrastructure/shared-infrastructure/terraform/staging/files/ssh/web.key
-  IdentityFile ~/.ssh/id_rsa
-  IdentitiesOnly yes
-  ProxyCommand ~/Projects/Pressbooks/infrastructure/shared-infrastructure/bin/proxy-command.sh staging -W %h:%p
-  ForwardAgent true
+Host codeberg.org
+  HostName codeberg.org
+  User git
+  IdentityFile ~/.ssh/id_ed25519_codeberg
 
-# Fore
-Host fore
-  HostName 167.99.185.65
+host incd-prod
+  HostName prod-docker
+  Port 22
+  User ec2-user
+  IdentityFile ~/.ssh/incd-prod.pem
+  StrictHostKeyChecking no
+
+host incd-test
+  HostName test-docker
+  Port 22
+  User ec2-user
+  IdentityFile ~/.ssh/incd-test.pem
+  StrictHostKeyChecking no
+
+host archive
+  HostName 148.113.173.59
+  User forge
+  IdentityAgent "~/.1password/agent.sock"
+
+host chc
+  HostName commonhorizoncommun.org
+  User yiipby22
+  IdentityAgent "~/.1password/agent.sock"
+
+host littoral
+  HostName 192.168.4.209
+  Port 2222
+  User piranesi
+  IdentityAgent "~/.1password/agent.sock"
+
+Host bight-one
+  HostName 51.222.139.184
   User ubuntu
-
-# Fore (Local)
-Host fore-local
-  HostName 127.0.0.1
-  User vagrant
-  Port 2222
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile /Users/ned/Projects/Bight/fore/.vagrant/machines/default/virtualbox/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-  ForwardAgent yes
-
-# Port
-Host port
-  HostName 165.227.43.20
-  User ubuntu
-
-# Starboard
-Host starboard
-  HostName 159.203.44.190
-  User ubuntu
-
-Host antigonishtownhouse.test
-  HostName 127.0.0.1
-  User vagrant
-  Port 2222
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile /Users/ned/Projects/Bight/antigonishtownhouse.com/trellis/.vagrant/machines/default/virtualbox/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-  ForwardAgent yes
-Host platformcoop.test
-  HostName 127.0.0.1
-  User vagrant
-  Port 2222
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile /Users/ned/Projects/IDRC/platform.coop/trellis/.vagrant/machines/default/virtualbox/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-  ForwardAgent yes
-
-Host greatislandarts.test
-  HostName 127.0.0.1
-  User vagrant
-  Port 2222
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile /Users/ned/Projects/Bight/port/.vagrant/machines/default/virtualbox/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-  ForwardAgent yes
-
-Host resources.platform.test
-  HostName 127.0.0.1
-  User vagrant
-  Port 2222
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile /Users/ned/Projects/IDRC/resources.platform.coop/trellis/.vagrant/machines/default/virtualbox/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-  ForwardAgent yes
-
+  Port 22
+  IdentityFile ~/.ssh/id_ed25519

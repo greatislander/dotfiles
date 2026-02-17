@@ -16,7 +16,6 @@
     lazygit
     mise
     php84Packages.composer
-    pure-prompt
     python315
     trash-cli
     typst
@@ -37,6 +36,11 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     completionInit = "autoload -U compinit && compinit";
+
+    oh-my-zsh = {
+      enable = true;
+      plugins = ["git" "macos" "rsync" "mise" "docker"];
+    };
 
     shellAliases = {
       artisan = "php artisan";
@@ -68,7 +72,9 @@
     # ".ssh/".source = config.lib.file.mkOutOfStoreSymlink "${userHome}/System/sshkeys";
     # pgp
     # ".gnupg/".source = config.lib.file.mkOutOfStoreSymlink "${userHome}/System/gnupgkeys";
+    ".gnupg/gpg.conf".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_gnupg_gpg.conf";
     ".gitconfig".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_gitconfig";
+    ".config/starship.toml".source =  config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_config_starship.toml";
     # configuration
     # ".config/.gtc_comm".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_gtc_comm";
     # ".config/.gtc_func".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_gtc_func";

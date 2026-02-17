@@ -1,8 +1,10 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.composer/vendor/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.composer/vendor/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ned/.oh-my-zsh"
+
+export PLAYDATE_SDK_PATH="/Users/ned/Developer/PlaydateSDK"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -46,11 +48,20 @@ export ZSH="/Users/ned/.oh-my-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm osx rsync)
+plugins=(git osx rsync)
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+eval "$(trellis shell-init zsh)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -76,10 +87,18 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tf="terraform"
+
+alias zshconfig="nova ~/.zshrc"
+alias ohmyzsh="nova ~/.oh-my-zsh"
+alias git="/usr/local/bin/git"
 alias rm="trash"
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias artisan="php artisan"
+alias a="php artisan"
+alias hours="ssh raspberrypi 'php /home/pi/Code/hours/hours $*'"
+alias p="vendor/bin/pest"
+alias listnodemodules="find . -type d -name 'node_modules' -prune -mtime +30 | xargs du -sh | gsort -rh | head -20"
+alias prunenodemodules="find . -type d -name 'node_modules' -prune -mtime +30 | xargs du -sh | gsort -rh | head -20 | cut -c 6- | xargs rm -r"
 
 # Z
 source /usr/local/etc/profile.d/z.sh
@@ -91,25 +110,11 @@ prompt pure
 # GPG Agent
 export PATH="/usr/local/opt/gpg-agent/bin:$PATH"
 export PATH="/usr/local/opt/node/bin:$PATH"
-export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-# Virtualenv
-# export VIRTUALENVWRAPPER_PYTHON=$(which python2.7)
-# export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-# export WORKON_HOME=~/.virtualenvs
-# source /usr/local/bin/virtualenvwrapper.sh
-
-# added by travis gem
-[ -f /Users/ned/.travis/travis.sh ] && source /Users/ned/.travis/travis.sh
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/sbin:$PATH"
-
-  export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/sbin:$PATH"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # place this after nvm initialization!
 autoload -U add-zsh-hook
@@ -133,8 +138,11 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-# GitHub API shortcut
-github-api-curl() {
-  curl -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/$1"
-}
-alias github-api-curl="noglob github-api-curl"
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/trellis trellis
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+test -e "$HOME/.shellfishrc" && source "$HOME/.shellfishrc"
