@@ -15,6 +15,7 @@
     lazydocker
     lazygit
     mise
+    oh-my-zsh
     php84Packages.composer
     python315
     trash-cli
