@@ -26,17 +26,17 @@
     zoxide
   ];
 
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     completionInit = "autoload -U compinit && compinit";
-
-    oh-my-zsh = {
-      enable = true;
-      plugins = ["git" "macos" "rsync" "mise" "docker"];
-    };
 
     shellAliases = {
       artisan = "php artisan";
