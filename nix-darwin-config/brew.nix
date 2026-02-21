@@ -19,6 +19,7 @@
       "colour-contrast-analyser"
       "dbngin"
       "discord"
+      "dot"
       "epic-games"
       "fantastical"
       "fastmail"

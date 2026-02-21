@@ -40,7 +40,7 @@
         tailscale
       ];
 
-      networking.computerName = "Onyx";
+      networking.computerName = "onyx";
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
@@ -95,7 +95,7 @@
       specialArgs = { inherit user userHome dotfilesPath; };
       modules = [
         configuration
-        # ./brew.nix
+        ./brew.nix
         mac-app-util.darwinModules.default
         home-manager.darwinModules.home-manager
         {
