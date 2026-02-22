@@ -53,7 +53,10 @@
       "logi-options+"
       "maestral"
       "menuwhere"
+      "microsoft-excel"
+      "microsoft-outlook"
       "microsoft-teams"
+      "microsoft-word"
       "moom"
       "mullvad-vpn"
       "netnewswire"
@@ -86,12 +89,7 @@
       "Folder Quick Look" = 6753110395;
       "GitNotifier" = 1494640093;
       "JSON Peep" = 1458969831;
-      "Microsoft Excel" = 462058435;
-      "Microsoft Outlook" = 985367838;
-      "Microsoft PowerPoint" = 462062816;
-      "Microsoft Word" = 462054704;
       "One Thing" = 1604176982;
-      "OneDrive" = 823766827;
       "Pages" = 409201541;
       "Pure Paste" = 1611378436;
       "Refined GitHub" = 1519867270;
