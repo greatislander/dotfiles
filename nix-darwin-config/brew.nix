@@ -60,6 +60,7 @@
       "moom"
       "mullvad-vpn"
       "netnewswire"
+      "nova"
       "obsidian"
       "orbstack"
       "orion"
