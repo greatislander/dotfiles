@@ -89,8 +89,8 @@
   in
   {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#Onyx
-    darwinConfigurations."Onyx" = nix-darwin.lib.darwinSystem {
+    # $ darwin-rebuild build --flake .#onyx
+    darwinConfigurations."onyx" = nix-darwin.lib.darwinSystem {
       # Pass those informations to the submodules
       specialArgs = { inherit user userHome dotfilesPath; };
       modules = [
