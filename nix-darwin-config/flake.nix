@@ -35,6 +35,7 @@
         magic-wormhole
         mas
         neovim
+        nil
         nixd
         ripgrep
         tailscale
