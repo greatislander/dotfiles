@@ -31,6 +31,7 @@
         delta
         eza
         fd
+        hours
         lima
         magic-wormhole
         mas
@@ -39,7 +40,6 @@
         nixd
         ripgrep
         tailscale
-        watson
       ];
 
       networking.computerName = "onyx";
