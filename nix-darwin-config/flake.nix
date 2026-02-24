@@ -39,6 +39,7 @@
         nixd
         ripgrep
         tailscale
+        watson
       ];
 
       networking.computerName = "onyx";
