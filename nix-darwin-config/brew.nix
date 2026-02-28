@@ -37,6 +37,7 @@
       "ghostty"
       "gitup-app"
       "google-chrome"
+      "gramps"
       "gpg-suite"
       "hammerspoon"
       "handbrake-app"
