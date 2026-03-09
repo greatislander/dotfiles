@@ -29,6 +29,7 @@
         certbot
         curl
         delta
+        deno
         eza
         fd
         hours
