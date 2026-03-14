@@ -41,6 +41,7 @@
         nixd
         ripgrep
         tailscale
+        svgo
       ];
 
       networking.computerName = "onyx";
