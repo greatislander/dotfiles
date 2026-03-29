@@ -20,17 +20,10 @@ Host codeberg.org
   IdentityFile ~/.ssh/id_ed25519_codeberg
 
 host incd-prod
-  HostName prod-docker
+  HostName incd-aws-prod-web-01
   Port 22
-  User ec2-user
+  User ubuntu
   IdentityFile ~/.ssh/incd-prod.pem
-  StrictHostKeyChecking no
-
-host incd-test
-  HostName test-docker
-  Port 22
-  User ec2-user
-  IdentityFile ~/.ssh/incd-test.pem
   StrictHostKeyChecking no
 
 host archive

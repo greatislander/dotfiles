@@ -30,3 +30,6 @@
 	gpgsign = true
 [tag]
     gpgsign = true
+
+[includeIf "gitdir:~/Code/IDRC/"]
+    path = ~/Code/IDRC/.gitconfig
