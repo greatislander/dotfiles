@@ -1,0 +1,14 @@
+[[ssh-keys]]
+item = "SSH Key (2025)"
+vault = "Private"
+account = "Great Island"
+
+[[ssh-keys]]
+item = "GitHub [nedatidrc]"
+vault = "Private"
+account = "Great Island"
+
+[[ssh-keys]]
+item = "Github Signing Key"
+vault = "Private"
+account = "Great Island"

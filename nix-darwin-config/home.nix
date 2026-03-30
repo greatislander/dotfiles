@@ -76,6 +76,7 @@
     ".gnupg/gpg.conf".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_gnupg_gpg.conf";
     ".gitconfig".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_gitconfig";
     ".config/starship.toml".source =  config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_config_starship.toml";
+    ".config/1Password/ssh/agent.toml".source =  config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_agent.toml";
     # configuration
     # ".config/.gtc_comm".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_gtc_comm";
     # ".config/.gtc_func".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dot/dot_gtc_func";
