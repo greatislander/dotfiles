@@ -8,7 +8,13 @@ Include ~/.lima/ceciliamckinnon.art/ssh.config
 Host *
   IdentityAgent "~/.1password/agent.sock"
 
-host pi4
+Host incd.github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/github-nedatidrc.pub
+  IdentitiesOnly yes
+
+Host pi4
   HostName pi4.angora-escalator.ts.net
   Port 22
   User ned

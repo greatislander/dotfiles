@@ -31,5 +31,14 @@
 [tag]
     gpgsign = true
 
+[url "git@incd.github.com:inclusive-design/"]
+    insteadOf = "git@github.com:inclusive-design/"
+
+[url "git@incd.github.com:fluid-project/"]
+    insteadOf = "git@github.com:fluid-project/"
+
+[url "git@incd.github.com:nedatidrc/"]
+    insteadOf = "git@github.com:nedatidrc/"
+
 [includeIf "gitdir:~/Code/IDRC/"]
     path = ~/Code/IDRC/.gitconfig
