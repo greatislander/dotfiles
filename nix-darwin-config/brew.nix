@@ -21,6 +21,7 @@
       "dbngin"
       "discord"
       "dot"
+      "ente"
       "epic-games"
       "fantastical"
       "fastmail"
