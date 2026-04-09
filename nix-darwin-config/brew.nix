@@ -6,6 +6,14 @@
     onActivation.autoUpdate = false;
     onActivation.upgrade = true;
 
+    taps = [
+      "roots/tap"
+    ];
+
+    brews = [
+      "roots/tap/trellis-cli"
+    ];
+
     # GUIs
     casks = [
       "1password"

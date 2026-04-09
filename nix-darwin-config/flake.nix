@@ -42,6 +42,7 @@
         ripgrep
         tailscale
         svgo
+        wp-cli
       ];
 
       networking.computerName = "onyx";
