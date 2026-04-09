@@ -12,6 +12,7 @@
     ];
 
     brews = [
+      "nss"
       "ddev/ddev/ddev"
       "roots/tap/trellis-cli"
     ];

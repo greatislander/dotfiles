@@ -39,7 +39,6 @@
         neovim
         nil
         nixd
-        nss
         ripgrep
         tailscale
         svgo
