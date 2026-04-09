@@ -8,9 +8,11 @@
 
     taps = [
       "roots/tap"
+      "ddev/ddev"
     ];
 
     brews = [
+      "ddev/ddev/ddev"
       "roots/tap/trellis-cli"
     ];
 
