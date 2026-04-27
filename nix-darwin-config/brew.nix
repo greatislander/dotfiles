@@ -31,7 +31,6 @@
       "daruma"
       "dbngin"
       "discord"
-      "dot"
       "ente"
       "epic-games"
       "fantastical"
@@ -103,6 +102,7 @@
     # Mac App Store apps
     masApps = {
       "1Password for Safari" = 1569813296;
+      "Dato" = 1470584107;
       "Folder Quick Look" = 6753110395;
       "GitNotifier" = 1494640093;
       "JSON Peep" = 1458969831;
@@ -112,7 +112,6 @@
       "Refined GitHub" = 1519867270;
       "S3" = 6447647340;
       "ToothFairy" = 1191449274;
-      "Velja" = 1607635845;
     };
   };
 }
