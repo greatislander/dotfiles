@@ -12,3 +12,8 @@ account = "Great Island"
 item = "Github Signing Key"
 vault = "Private"
 account = "Great Island"
+
+[[ssh-keys]]
+item = "Laravel Forge"
+vault = "Private"
+account = "Great Island"

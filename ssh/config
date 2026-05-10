@@ -43,7 +43,7 @@ host chc
   IdentityAgent "~/.1password/agent.sock"
 
 host littoral
-  HostName 192.168.4.209
+  HostName littoral.junco-alewife.ts.net
   Port 2222
   User piranesi
   IdentityAgent "~/.1password/agent.sock"
