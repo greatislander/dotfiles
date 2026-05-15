@@ -40,6 +40,7 @@
         nil
         nixd
         ripgrep
+        rustup
         tailscale
         svgo
         wp-cli

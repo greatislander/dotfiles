@@ -46,6 +46,7 @@
     shellAliases = {
       artisan = "php artisan";
       gh-merge-review = "function _gh_merge_review() { gh pr merge --auto -sd \"$1\" && gh pr review --approve \"$1\"; }; _gh_merge_review";
+      nedometer = "zeit stat this month -f json | deno ~/Code/Personal/nedometer-freelance/nedometer.js | jq";
       listnodemodules = "find . -type d -name 'node_modules' -prune -mtime +30 | xargs du -sh | gsort -rh | head -20";
       nixswitch = "sudo -i darwin-rebuild switch";
       nixclean = "nix-collect-garbage -d";
